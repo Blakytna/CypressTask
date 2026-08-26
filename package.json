@@ -1,0 +1,19 @@
+{
+  "name": "task-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test:chrome": "cypress run --browser chrome --headless",
+  "test:firefox": "cypress run --browser firefox --headless",
+  "test:edge": "cypress run --browser edge --headless",
+  "test:all": "npm run test:chrome && npm run test:firefox && npm run test:edge"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "cypress": "^15.21.0"
+  }
+}
