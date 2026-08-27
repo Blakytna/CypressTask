@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test:chrome": "cypress run --browser chrome --headless",
-  "test:firefox": "cypress run --browser firefox --headless",
-  "test:edge": "cypress run --browser edge --headless",
-  "test:all": "npm run test:chrome && npm run test:firefox && npm run test:edge"
+    "test:chrome": "cypress run --browser chrome --headless --env browserName=chrome",
+    "test:firefox": "cypress run --browser firefox --headless --env browserName=firefox",
+    "test:edge": "cypress run --browser edge --headless --env browserName=edge",
+    "test:all": "npm run test:chrome && npm run test:firefox && npm run test:edge"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "cypress": "^15.21.0"
+    "cypress": "^15.21.0",
+    "cypress-mochawesome-reporter": "^5.0.0"
   }
 }
